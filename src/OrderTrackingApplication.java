@@ -221,7 +221,7 @@ public class OrderTrackingApplication {
     String allocatedDriverString = "";
 
     /*
-     * Read each line of the "drivers.txt" file one by one and store each as a
+     * Read each line of the "driver-info.txt" file one by one and store each as a
      * String in an ArrayList. The elements in this ArrayList will be the respective
      * drivers with their details.
      */
@@ -460,7 +460,7 @@ public class OrderTrackingApplication {
     ArrayList<String> drivers = new ArrayList<>();
 
     try {
-      String driversFile = "drivers.txt";
+      String driversFile = "driver-info.txt";
       File driverList = new File(driversFile);
       Scanner scan = new Scanner(driverList);
       while (scan.hasNextLine()) {
